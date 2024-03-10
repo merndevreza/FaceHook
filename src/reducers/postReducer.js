@@ -27,6 +27,13 @@ const postReducer = (state, action) => {
         error: action.error,
       };
     }
+    case actions.post.DATA_CREATED: {
+      return {
+        ...state,
+        loading: false,
+        posts:[...state.posts,action.data]
+      };
+    }
 
     default: {
       return state;
