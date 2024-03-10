@@ -17,8 +17,6 @@ const ProfileBio = () => {
         `${import.meta.env.VITE_SERVER_BASE_URL}/profile/${state?.user?.id}`,
         {bio}
       );
-      console.log(bio);
-      console.log(response.data);
       if (response.status===200) {
         dispatch({
           type: actions.profile.USER_DATA_EDITED,

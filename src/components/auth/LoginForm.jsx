@@ -26,7 +26,7 @@ const LoginForm = () => {
           console.log();
           const refreshToken = token.refreshToken;
           setAuth({ user, authToken, refreshToken });
-          navigate("/me");
+          navigate("/");
         }
       }
     } catch (error) {

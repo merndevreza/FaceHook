@@ -20,7 +20,6 @@ const ProfileInfo = () => {
           <div className="w-3/4 border-b border-[#3F3F3F] py-6 lg:py-8"></div>
       </div>
       
-      <h4 className="mt-6 text-xl lg:mt-8 lg:text-2xl">Your Posts</h4>
       </>
    );
 };
