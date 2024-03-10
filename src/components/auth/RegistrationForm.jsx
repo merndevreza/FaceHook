@@ -22,7 +22,6 @@ const RegistrationForm = () => {
         `${import.meta.env.VITE_SERVER_BASE_URL}/auth/register`,
         data
       );
-      console.log(response);
       if (response.status === 201) {
         navigate("/login");
       }

@@ -4,12 +4,11 @@ import PostComments from "./PostComments";
 import PostHeader from "./PostHeader";
 
 const PostCard = ({ post }) => {
-  const { id, author, createAt, content, image, comments, postType } = post; 
   return (
     <article className="card mt-6 lg:mt-8">
       <PostHeader post={post} />
-      <PostBody post={post}  image={image} content={content} />
-      <PostActions post={post}  totalComments={comments.length} />
+      <PostBody image={post.image} content={post.content} />
+      <PostActions post={post}/>
       <PostComments post={post}/>
     </article>
   );
